@@ -14,9 +14,20 @@ A warning box pops up that says _This is an old revision of this page, as edited
 
 <code>In a certain CTF competition, the flag to a certain problem is "cNi76bV2IVERlh97hP".</code>
 
+<code>CTFLearn{cNi76bV2IVERlh97h}</code>
+
 ## Morse Code
 <code>..-. .-.. .- --. ... .- -- ..- . .-.. -- --- .-. ... . .. ... -.-. --- --- .-.. -... -.-- - .... . .-- .- -.-- .. .-.. .. -.- . -.-. .... . . ...</code>
 
 Just a simple morse code challenge. Fire up https://icyberchef.com, paste the code and translate from morse.
 
-We get the flag <code>FLAGSAMUELMORSEISCOOLBYTHEWAYILIKECHEES</code>
+We get the flag <code>CTFLearn{FLAGSAMUELMORSEISCOOLBYTHEWAYILIKECHEES}</code>
+
+## WOW.... So Meta
+<code>This photo was taken by our target. See what you can find out about him from it. https://mega.nz/#!ifA2QAwQ!WF-S-MtWHugj8lx1QanGG7V91R-S1ng7dDRSV25iFbk</code>
+
+So obviously from the context we're dealing with image metadata. A couple of tools that can be used for that:
+  * imagemagick
+
+First rename the downloaded picture to _image.jpg_ for easier usage. Starting off with _imagemagick_ from <code>man imagemagick</code> we see that we can use <code>identify -verbose image.jpg | grep -i "flag"</code> the output of that code is _MicrosoftPhoto:CameraSerialNumber: flag{EEe_x_I_FFf}_ thus our flag is:
+<code>CTFLearn{EEe_x_I_FFf}</code>
