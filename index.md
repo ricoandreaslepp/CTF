@@ -1,6 +1,8 @@
 # CTF write ups
 Just a webpage for various CTF challenges I've solved.
 
+<code>WARNING! There will be spoilers ahead</code>
+
 # picoCTF
 
 # CTFLearn
