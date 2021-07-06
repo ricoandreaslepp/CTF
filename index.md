@@ -35,3 +35,10 @@ So obviously from the context we're dealing with image metadata. A couple of too
 
 First rename the downloaded picture to _image.jpg_ for easier usage. Starting off with _imagemagick_ from <code>man imagemagick</code> we see that we can use <code>identify -verbose image.jpg | grep -i "flag"</code> the output of that code is _MicrosoftPhoto:CameraSerialNumber: flag{EEe_x_I_FFf}_ thus our flag is:
 <code>CTFLearn{EEe_x_I_FFf}</code>
+
+## Reverse Polarity
+<code>I got a new hard drive just to hold my flag, but I'm afraid that it rotted. What do I do? The only thing I could get off of it was this: 01000011010101000100011001111011010000100110100101110100010111110100011001101100011010010111000001110000011010010110111001111101</code>
+
+Another very simple challenge, just go to https://icyberchef.com and translate from binary.
+
+<code>CTF{Bit_Flippin}</code>
