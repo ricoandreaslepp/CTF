@@ -42,3 +42,10 @@ First rename the downloaded picture to _image.jpg_ for easier usage. Starting of
 Another very simple challenge, just go to https://icyberchef.com and translate from binary.
 
 <code>CTF{Bit_Flippin}</code>
+
+## **Vigenère Cipher**
+We're given the key <code>blorpy</code> and the encoded flag <code>gwox{RgqssihYspOntqpxs}</code> and we just got to perform a simple decipher.
+
+
+
+
