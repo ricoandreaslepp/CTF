@@ -30,6 +30,8 @@ We get the flag <code>CTFLearn{FLAGSAMUELMORSEISCOOLBYTHEWAYILIKECHEES}</code>
 
 So obviously from the context we're dealing with image metadata. A couple of tools that can be used for that:
   * imagemagick
+  * file
+  * exiftool
 
 First rename the downloaded picture to _image.jpg_ for easier usage. Starting off with _imagemagick_ from <code>man imagemagick</code> we see that we can use <code>identify -verbose image.jpg | grep -i "flag"</code> the output of that code is _MicrosoftPhoto:CameraSerialNumber: flag{EEe_x_I_FFf}_ thus our flag is:
 <code>CTFLearn{EEe_x_I_FFf}</code>
