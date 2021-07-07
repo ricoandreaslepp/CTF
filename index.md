@@ -46,6 +46,13 @@ Another very simple challenge, just go to https://icyberchef.com and translate f
 ## **Vigenère Cipher**
 We're given the key <code>blorpy</code> and the encoded flag <code>gwox{RgqssihYspOntqpxs}</code> and we just got to perform a simple decipher.
 
+Another challenge that's very simple to solve using CyberChef, but I decided to try and implement a Vigenère decipher in Python by hand.
+
+First you need the Vigenère square, since there are lower and uppercase letters in the cipher I decided to have both lower and uppercase squares as well.
+
+After creating the squares just work it back from the given key and cipher.
+
+Eventually we end up with <code>flag{CiphersAreAwesome}</code>
 
 
 
