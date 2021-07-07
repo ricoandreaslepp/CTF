@@ -45,11 +45,10 @@ Another very simple challenge, just go to https://icyberchef.com and translate f
 
 ## **Vigenère Cipher**
 <code>The vignere cipher is a method of encrypting alphabetic text by using a series of interwoven Caesar ciphers based on the letters of a keyword.<br />
-
 I’m not sure what this means, but it was left lying around: blorpy
-
 gwox{RgqssihYspOntqpxs}
 </code>
+
 We're given the key <code>blorpy</code> and the encoded flag <code>gwox{RgqssihYspOntqpxs}</code> and we just got to perform a simple decipher.
 
 Another challenge that's very simple to solve using CyberChef, but I decided to try and implement a Vigenère decipher in Python by hand.
