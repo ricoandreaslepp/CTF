@@ -53,7 +53,12 @@ First you need the Vigenère square, since there are lower and uppercase letters
 After creating the squares just work it back from the given key and cipher. Essentially you should end up with something like this: <br>
 <code>col = sq[0].index(key[i])</code><br>
 <code>letter = sq[0][sq[col].index(cipher[i])]</code><br>
+Where i is just the current position that we're working with
 
+I also had to do a little work on the cipher and key itself. First of all, because the key contained brackets so after removing then we end up with:<br>
+<code>gwoxRgqssihYspOntqpxs</code>
+And now we need the key to match the length of the cipher as well so we just repeat the key thrice and attach 3 more letters to match the key's length of 21 characters.
+<code>blorpyblorpyblorpyblo</code>
 
 The code I used can be found here: https://github.com/ricoandreaslepp/ciphers/blob/main/dVigenere.py
 
