@@ -43,7 +43,7 @@ Another very simple challenge, just go to https://icyberchef.com and translate f
 
 <code>CTF{Bit_Flippin}</code>
 
-## **Vigenère Cipher**
+## Vigenère Cipher
 <code>The vignere cipher is a method of encrypting alphabetic text by using a series of interwoven Caesar ciphers based on the letters of a keyword.<br />
 I’m not sure what this means, but it was left lying around: blorpy
 gwox{RgqssihYspOntqpxs}
@@ -69,7 +69,7 @@ The code I used can be found here: https://github.com/ricoandreaslepp/ciphers/bl
 
 Eventually we end up with <code>flag{CiphersAreAwesome}</code>
 
-# Git Is Good
+## Git Is Good
 <code>The flag used to be there. But then I redacted it. Good Luck. https://mega.nz/#!3CwDFZpJ!Jjr55hfJQJ5-jspnyrnVtqBkMHGJrd6Nn_QqM7iXEuc</code>
 A little more complicated this time around, even though it's still an easy challenge.
 
