@@ -56,8 +56,8 @@ After creating the squares just work it back from the given key and cipher. Esse
 Where i is just the current position that we're working with
 
 I also had to do a little work on the cipher and key itself. First of all, because the key contained brackets so after removing then we end up with:<br>
-<code>gwoxRgqssihYspOntqpxs</code>
-And now we need the key to match the length of the cipher as well so we just repeat the key thrice and attach 3 more letters to match the key's length of 21 characters.
+<code>gwoxRgqssihYspOntqpxs</code><br>
+And now we need the key to match the length of the cipher as well so we just repeat the key thrice and attach 3 more letters to match the key's length of 21 characters. <br>
 <code>blorpyblorpyblorpyblo</code>
 
 The code I used can be found here: https://github.com/ricoandreaslepp/ciphers/blob/main/dVigenere.py
