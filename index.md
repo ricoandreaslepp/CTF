@@ -74,7 +74,7 @@ Eventually we end up with <code>flag{CiphersAreAwesome}</code>
 
 A little more complicated this time around, even though it's still an easy challenge.
 
-So from the name of the challenge and the downloaded file we can conclude that it's some sort of git repository. In the folder itself we find a _flag.txt_ file that has been redacted. By moving into the _gitIsGood_ folder and running <code>git show</code> on Kali we get the flag from the logs that was first entered into the repo.
+So from the name of the challenge and the downloaded file we can conclude that it's some sort of git repository. In the folder itself we find a _flag.txt_ file that has been redacted. By moving into the _gitIsGood_ folder and running <code>git show</code> on Kali we get the flag from the _logs_.
 
 <code>flag{protect_your_git}</code>
 
