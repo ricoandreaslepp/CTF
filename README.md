@@ -1,1 +1,1 @@
-# Website on https://ricoandreaslepp.github.io/ral/
+# Website on https://ricoandreaslepp.github.io/CTF/
