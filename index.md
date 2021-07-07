@@ -51,8 +51,7 @@ Another challenge that's very simple to solve using CyberChef, but I decided to 
 First you need the Vigenère square, since there are lower and uppercase letters in the cipher I decided to have both lower and uppercase squares as well.
 
 After creating the squares just work it back from the given key and cipher. Essentially you should end up with something like this: <br>
-<code>col = sq[0].index(key[i]) <br>
-			letter = sq[0][sq[col].index(cipher[i])]</code><br>
+<code>col = sq[0].index(key[i]); letter = sq[0][sq[col].index(cipher[i])]</code><br>
 
 
 The code I used can be found here: https://github.com/ricoandreaslepp/ciphers/blob/main/dVigenere.py
