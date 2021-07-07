@@ -44,6 +44,12 @@ Another very simple challenge, just go to https://icyberchef.com and translate f
 <code>CTF{Bit_Flippin}</code>
 
 ## **Vigenère Cipher**
+<code>The vignere cipher is a method of encrypting alphabetic text by using a series of interwoven Caesar ciphers based on the letters of a keyword.<br />
+
+I’m not sure what this means, but it was left lying around: blorpy
+
+gwox{RgqssihYspOntqpxs}
+</code>
 We're given the key <code>blorpy</code> and the encoded flag <code>gwox{RgqssihYspOntqpxs}</code> and we just got to perform a simple decipher.
 
 Another challenge that's very simple to solve using CyberChef, but I decided to try and implement a Vigenère decipher in Python by hand.
@@ -65,6 +71,7 @@ The code I used can be found here: https://github.com/ricoandreaslepp/ciphers/bl
 Eventually we end up with <code>flag{CiphersAreAwesome}</code>
 
 # Git Is Good
+<code>The flag used to be there. But then I redacted it. Good Luck. https://mega.nz/#!3CwDFZpJ!Jjr55hfJQJ5-jspnyrnVtqBkMHGJrd6Nn_QqM7iXEuc</code>
 A little more complicated this time around, even though it's still an easy challenge.
 
 So from the name of the challenge and the downloaded file we can conclude that it's some sort of git repository. In the folder itself we find a _flag.txt_ file that has been redacted. By moving into the _gitIsGood_ folder and running <code>git show</code> on Kali we get the flag from the logs that was first entered into the repo.
