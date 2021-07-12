@@ -32,8 +32,9 @@ So obviously from the context we're dealing with image metadata. A couple of too
   * imagemagick
   * file
   * exiftool
+  * binwalk
 
-First rename the downloaded picture to _image.jpg_ for easier usage. Starting off with _imagemagick_ from <code>man imagemagick</code> we see that we can use <code>identify -verbose image.jpg | grep -i "flag"</code> the output of that code is _MicrosoftPhoto:CameraSerialNumber: flag{EEe_x_I_FFf}_ thus our flag is:
+First rename the downloaded picture to _image.jpg_ for easier usage. Starting off with _imagemagick_ from <code>man imagemagick</code> we see that we can use <code>man identify</code> and that gives us <code>identify -verbose image.jpg | grep -i "flag"</code> the output of that code is _MicrosoftPhoto:CameraSerialNumber: flag{EEe_x_I_FFf}_ thus our flag is:
 <code>CTFLearn{EEe_x_I_FFf}</code>
 
 ## Reverse Polarity
@@ -119,4 +120,18 @@ PS. One thing to keep in mind is that the username and password have to be in th
 
 And the response gives us the flag <code>flag{p0st_d4t4_4ll_d4y}</code>
 
+## 07601
 
+<code>https://mega.nz/#!CXYXBQAK!6eLJSXvAfGnemqWpNbLQtOHBvtkCzA7-zycVjhHPYQQ I think I lost my flag in there. Hopefully, it won't get attacked...</code>
+
+Definitely a harder one this time. Dealing with images the need to know tools are:
+  * imagemagick
+  * file
+  * exiftool
+  * binwalk
+  * strings
+(There's definitely around 1 million additional tools, but these are the ones that I know and use)
+
+Tried messing around with different tools just to see if something pops up, but nothing really did. Then I got to binwalk and found out that there are quite a few hidden files in the innocent _PNG_ file. Extracted those into a directory called _walk_ and after extracting all the _I Warned You.jpeg_ files and running <code>strings | grep "{"</code> one of the files gave a suspicious looking line <code>ABCTF{Du$t1nS_D0jo}1r</code> and from there our real flag was:
+
+<code>ABCTF{Du$t1nS_D0jo}</code>
