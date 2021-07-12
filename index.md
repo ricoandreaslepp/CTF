@@ -85,7 +85,7 @@ Personally really enjoyed this one, helped me understand more about how HTTP req
 
 So we start off with the website we're given and on it, it says that our user agent isn't valid.
 
-After inspecting the page that we land on we find a HTML comment '<!-- Sup3rS3cr3tAg3nt --!>'.
+After inspecting the page that we land on we find a HTML comment <code><!-- Sup3rS3cr3tAg3nt --!></code>
 
 Then modifying our request with BurpSuite we can change our User-Agent to the given one. 
 
