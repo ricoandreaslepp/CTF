@@ -98,3 +98,21 @@ And here's a picture of the whole GET request on BurpSuite:
 ![Capture](https://user-images.githubusercontent.com/52963102/125332966-56eb0b80-e352-11eb-8b82-ff76305d3496.PNG)
 
 After that we get the flag: <code>flag{did_this_m3ss_with_y0ur_h34d}</code>
+
+## POST Practice
+
+<code>This website requires authentication, via POST. However, it seems as if someone has defaced our site. Maybe there is still some way to authenticate? http://165.227.106.113/post.php</code>
+
+A typical GET request gives us this response:
+
+![Capture](https://user-images.githubusercontent.com/52963102/125333791-53a44f80-e353-11eb-9c89-a17815415688.PNG)
+
+From there we just shift the GET request to a POST and add the lines:
+
+![Capture](https://user-images.githubusercontent.com/52963102/125338453-e4315e80-e358-11eb-89a3-c8d48ebc5591.PNG)
+
+PS. One thing to keep in mind is that the username and password have to be in the body part of the request, so the breakline is a must, otherwise the request will not get a response. Took me a good few minutes till I figured that out.
+
+And the response gives us the flag <code>flag{p0st_d4t4_4ll_d4y}</code>
+
+
