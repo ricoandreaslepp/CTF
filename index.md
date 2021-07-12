@@ -89,7 +89,11 @@ After inspecting the page that we land on we find a HTML comment <code><!-- Sup3
 
 Then modifying our request with BurpSuite we can change our User-Agent to the given one. 
 
-After that we land on a different page that says, that we didn't come from 'awesomesauce.com'. After a bit of research I found the variable Referer and set it to awesomesauce.com. Here's a picture of the whole GET request on BurpSuite:
+After that we land on a different page that says, that we didn't come from 'awesomesauce.com'. After a bit of research I found the header _Referer_ and set it to awesomesauce.com. Here's the description of the header:
+
+![Capture](https://user-images.githubusercontent.com/52963102/125333226-a7faff80-e352-11eb-9563-56c5d10db876.PNG)
+
+And here's a picture of the whole GET request on BurpSuite:
 
 ![Capture](https://user-images.githubusercontent.com/52963102/125332966-56eb0b80-e352-11eb-8b82-ff76305d3496.PNG)
 
