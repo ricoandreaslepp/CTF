@@ -85,7 +85,7 @@ Personally really enjoyed this one, helped me understand more about how HTTP req
 
 So we start off with the website we're given and on it, it says that our user agent isn't valid.
 
-After inspecting the page that we land on we find a HTML comment <code><!-- Sup3rS3cr3tAg3nt --!></code>
+After inspecting the page that we land on we find a HTML comment <code>Sup3rS3cr3tAg3nt</code>
 
 Then modifying our request with BurpSuite we can change our User-Agent to the given one. 
 
@@ -110,6 +110,10 @@ A typical GET request gives us this response:
 From there we just shift the GET request to a POST and add the lines:
 
 ![Capture](https://user-images.githubusercontent.com/52963102/125338453-e4315e80-e358-11eb-89a3-c8d48ebc5591.PNG)
+
+Where _Content-Length_ is just the length of the metadata string:
+
+![Capture](https://user-images.githubusercontent.com/52963102/125338854-628e0080-e359-11eb-8307-b3ebd473d055.PNG)
 
 PS. One thing to keep in mind is that the username and password have to be in the body part of the request, so the breakline is a must, otherwise the request will not get a response. Took me a good few minutes till I figured that out.
 
