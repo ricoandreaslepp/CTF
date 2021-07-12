@@ -78,3 +78,17 @@ So from the name of the challenge and the downloaded file we can conclude that i
 
 <code>flag{protect_your_git}</code>
 
+## Don't Bump Your Head(er)
+<code>Try to bypass my security measure on this site! http://165.227.106.113/header.php</code>
+
+Personally really enjoyed this one, helped me understand more about how HTTP requests and the web in general works.
+
+So we start off with the website we're given and on it, it says that our user agent isn't valid.
+
+After inspecting the page that we land on we find a HTML comment '<!-- Sup3rS3cr3tAg3nt --!>'.
+
+Then modifying our request with BurpSuite we can change our User-Agent to the given one. 
+
+After that we land on a different page that says, that we didn't come from 'awesomesauce.com'. After a bit of research I found the variable Referer and set it to awesomesauce.com
+
+After that we get the flag: <code>flag{did_this_m3ss_with_y0ur_h34d}</code>
