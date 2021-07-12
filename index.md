@@ -130,7 +130,7 @@ Definitely a harder one this time. Dealing with images the need to know tools ar
   * exiftool
   * binwalk
   * strings
-(There's definitely around 1 million additional tools, but these are the ones that I know and use)
+<br>(There's definitely around 1 million additional tools, but these are the ones that I know and use)
 
 Tried messing around with different tools just to see if something pops up, but nothing really did. Then I got to binwalk and found out that there are quite a few hidden files in the innocent _PNG_ file. Extracted those into a directory called _walk_ and after extracting all the _I Warned You.jpeg_ files and running <code>strings | grep "{"</code> one of the files gave a suspicious looking line <code>ABCTF{Du$t1nS_D0jo}1r</code> and from there our real flag was:
 
