@@ -17,10 +17,10 @@ Now originally I changed the value by hand till I reached _name=18_ and that giv
 
 It really didn't take long, I just had to fill the header with the data needed:
 <code>
- headers = {
-		'Referer' : 'http://mercury.picoctf.net:64944/',
-		'Cookie' : 'name='+str(i),
-		'Connection' : 'close'
+ headers = { <br>
+		'Referer' : 'http://mercury.picoctf.net:64944/',<br>
+		'Cookie' : 'name='+str(i),<br>
+		'Connection' : 'close'<br>
 	}
 </code>
 
