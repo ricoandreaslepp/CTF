@@ -16,13 +16,13 @@ A really fun challenge. After opening the page in Burp Suite and examining the H
 Now originally I changed the value by hand till I reached _name=18_ and that gives us the flag, but I wanted to try and simulate requests with Python as well.
 
 It really didn't take long, I just had to fill the header with the data needed:
-<code>
- headers = { <br>
-		'Referer' : 'http://mercury.picoctf.net:64944/',<br>
-		'Cookie' : 'name='+str(i),<br>
-		'Connection' : 'close'<br>
+<json>
+ headers = { 
+		'Referer' : 'http://mercury.picoctf.net:64944/',
+		'Cookie' : 'name='+str(i),
+		'Connection' : 'close'
 	}
-</code>
+</json>
 
 And then loop from -1 to 100 till we find _pico_ in _response.text_. Full code here:
 https://github.com/ricoandreaslepp/CTF/blob/main/cookies.py
