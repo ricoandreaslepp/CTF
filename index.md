@@ -13,7 +13,20 @@ A really fun challenge. After opening the page in Burp Suite and examining the H
 
 ![Capture](https://user-images.githubusercontent.com/52963102/125533318-157b8dfc-d34a-48c6-aec6-76227eede20c.PNG)
 
-Now originally I changed the value by hand till I reached _name=18_ and that gives us the flag, but I wanted to try and simulate requests with python as well.
+Now originally I changed the value by hand till I reached _name=18_ and that gives us the flag, but I wanted to try and simulate requests with Python as well.
+
+It really didn't take long, I just had to fill the header with the data needed:
+<code>
+ headers = {
+		'Referer' : 'http://mercury.picoctf.net:64944/',
+		'Cookie' : 'name='+str(i),
+		'Connection' : 'close'
+	}
+</code>
+
+And then loop from -1 to 100 till we find _pico_ in _response.text_
+
+<code>picoCTF{3v3ry1_l0v3s_c00k135_cc9110ba}</code>
 
 # CTFLearn
 
