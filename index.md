@@ -24,7 +24,8 @@ It really didn't take long, I just had to fill the header with the data needed:
 	}
 </code>
 
-And then loop from -1 to 100 till we find _pico_ in _response.text_
+And then loop from -1 to 100 till we find _pico_ in _response.text_. Full code here:
+https://github.com/ricoandreaslepp/CTF/blob/main/cookies.py
 
 <code>picoCTF{3v3ry1_l0v3s_c00k135_cc9110ba}</code>
 
