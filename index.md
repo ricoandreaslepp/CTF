@@ -135,3 +135,19 @@ Definitely a harder one this time. Dealing with images the need to know tools ar
 Tried messing around with different tools just to see if something pops up, but nothing really did. Then I got to _binwalk_ and found out that there are quite a few hidden files in the innocent looking _PNG_ file. Extracted those into a directory called _walk_ and after extracting all the _I Warned You.jpeg_ files and running <code>strings | grep "{"</code> one of the files gave a suspicious looking line <code>ABCTF{Du$t1nS_D0jo}1r</code> and from there our real flag was:
 
 <code>ABCTF{Du$t1nS_D0jo}</code>
+
+## A CAPture of a Flag
+
+<code>This isn't what I had in mind, when I asked someone to capture a flag... can you help? You should check out WireShark. https://mega.nz/#!3WhAWKwR!1T9cw2srN2CeOQWeuCm0ZVXgwk-E2v-TrPsZ4HUQ_f4</code>
+
+Another interesting challenge. Opening the file up on WireShark and looking through _tcp.stream eq_ we find that at _eq 5_ there's a _GET_ request:
+
+![Capture](https://user-images.githubusercontent.com/52963102/125420395-1389ddf6-d8f4-4bc3-abdf-ae5d5bcd0bc7.PNG)
+
+After base64 decode we get the flag:
+
+![Capture](https://user-images.githubusercontent.com/52963102/125420534-b3773b29-78d1-4fb7-9f2f-61dc9a3f1999.PNG)
+
+
+<code>flag{AFlagInPCAP}</code>
+
