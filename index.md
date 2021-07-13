@@ -5,6 +5,16 @@ Just a webpage for various CTF challenges I've solved.
 
 # picoCTF
 
+## Cookies
+
+<code>Who doesn't love cookies? Try to figure out the best one. http://mercury.picoctf.net:64944/</code>
+
+A really fun challenge. After opening the page in Burp Suite and examining the HTTP requests we find that a value _name_ is passed with each query:
+
+![Capture](https://user-images.githubusercontent.com/52963102/125533318-157b8dfc-d34a-48c6-aec6-76227eede20c.PNG)
+
+Now originally I changed the value by hand till I reached _name=18_ and that gives us the flag, but I wanted to try and simulate requests with python as well.
+
 # CTFLearn
 
 ## Wikipedia
