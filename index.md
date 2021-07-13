@@ -151,3 +151,12 @@ After base64 decode we get the flag:
 
 <code>flag{AFlagInPCAP}</code>
 
+## Rsa Noob
+
+<code>These numbers were scratched out on a prison wall. Can you help me decode them? https://mega.nz/#!al8iDSYB!s5olEDK5zZmYdx1LZU8s4CmYqnynvU_aOUvdQojJPJQ</code>
+
+A super simple RSA challenge. The tool I mostly find success with is RsaCtfTool on GitHub:
+
+![Capture](https://user-images.githubusercontent.com/52963102/125422351-ad555aa7-adc1-4990-af62-49a6e9dde1f5.PNG)
+
+<code>abctf{b3tter_up_y0ur_e}</code>
