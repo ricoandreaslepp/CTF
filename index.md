@@ -32,7 +32,7 @@ https://github.com/ricoandreaslepp/CTF/blob/main/cookies.py
 
 <code>Can you find the flag? </code>
 
-After following the TCP streams and reaching _tcp.stream eq 5_ we find a suspicious looking _GET_ request that gets a response from the server with some decrypted data.
+After following the TCP streams and reaching _tcp.stream eq 5_ we find a suspicious looking _GET_ request that gets a response from the server with some encrypted data.
 
 ![http_request](https://user-images.githubusercontent.com/52963102/126046587-c91c4cdf-d4fb-471f-b49a-6dbc77c33d57.PNG)
 
