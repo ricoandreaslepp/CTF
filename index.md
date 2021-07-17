@@ -28,6 +28,22 @@ https://github.com/ricoandreaslepp/CTF/blob/main/cookies.py
 
 <code>picoCTF{3v3ry1_l0v3s_c00k135_cc9110ba}</code>
 
+## Wireshark doo dooo do doo...
+
+<code>Can you find the flag? </code>
+
+After following the TCP streams and reaching _tcp.stream eq 5_ we find a suspicious looking _GET_ request that gets a response from the server with some decrypted data.
+
+![http_request](https://user-images.githubusercontent.com/52963102/126046587-c91c4cdf-d4fb-471f-b49a-6dbc77c33d57.PNG)
+
+I suspected it was ROT13 so I made a quick implementation in Python and ended up with:
+
+![flag](https://user-images.githubusercontent.com/52963102/126046615-6cb70e2f-9513-421d-942f-7bca23a31194.PNG)
+
+The code can of course be found at https://github.com/ricoandreaslepp/ciphers
+
+<code>The flag is picoCTF{p33kab00_1_s33_u_deadbeef}</code>
+
 # CTFLearn
 
 ## Wikipedia
