@@ -48,6 +48,18 @@ The code can of course be found at https://github.com/ricoandreaslepp/ciphers/bl
 
 to-do
 
+## login
+
+<code>My dog-sitter's brother made this website but I can't get in; can you help?</code>
+
+After opening the website we find that it uses a file called _index.js_ to check the credentials. Then opening it and running it through a JavaScript prettifier we end up with the following:
+
+![Capture](https://user-images.githubusercontent.com/52963102/126078478-6a97954b-74e1-4681-a268-081d21a9e8d8.PNG)
+
+I'm not too familiar with JavaScript but the code isn't too difficult and after looking at the _return_ part of the function and googling what _btoa()_ does we end up with just _base64_ decoding the given strings, thus our username is _admin_ and password is the flag.
+
+<code>picoCTF{53rv3r_53rv3r_53rv3r_53rv3r_53rv3r}</code>
+
 # CTFLearn
 
 ## Wikipedia
