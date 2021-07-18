@@ -44,6 +44,10 @@ The code can of course be found at https://github.com/ricoandreaslepp/ciphers/bl
 
 <code>The flag is picoCTF{p33kab00_1_s33_u_deadbeef}</code>
 
+## Shop
+
+to-do
+
 # CTFLearn
 
 ## Wikipedia
