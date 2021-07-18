@@ -225,3 +225,7 @@ And for the sake of it here's one more:
 
 <code>abctf{rs4_is_aw3s0m3}</code>
 
+## BruXOR
+
+<code>There is a technique called bruteforce. Message: q{vpln'bH_varHuebcrqxetrHOXEj No key! Just brute .. brute .. brute ... :D</code>
+
