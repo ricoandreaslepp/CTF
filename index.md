@@ -6,9 +6,23 @@ Just a webpage for various CTF challenges I've solved.
 # TryHackMe
 
 ## Overpass
-''' python
+´´´bash
 nmap -v <machine_ip>
-'''
+´´´
+Shows SSH on port 22 and an webpage on port 80. After that:
+
+´´´bash
+nmap -v --script=ssh-brute <machine_ip>
+´´´
+
+Doesn't manage to brute-froce the credentials.
+
+´´´bash
+nikto -host <machine_ip>
+´´´
+![Capture](https://user-images.githubusercontent.com/52963102/128154609-d44f494b-691b-4f93-84ad-0676e53ca06f.PNG)
+
+...and on <code><machine_up>/admin</code> we find a login page.
 
 
 # picoCTF
@@ -21,7 +35,7 @@ A really fun challenge. After opening the page in Burp Suite and examining the H
 
 ![Capture](https://user-images.githubusercontent.com/52963102/125533318-157b8dfc-d34a-48c6-aec6-76227eede20c.PNG)
 
-Now originally I changed the value by hand till I reached _name=18_ and that gives us the flag, but I wanted to try and simulate requests with Python as well.
+Now originally I changed the value by hand till I reached _name=18_ and that gives us the flag, but I wanted to try and simulate requests with as well.
 
 It really didn't take long, I just had to fill the header with the data needed:
 <code> headers = { 
