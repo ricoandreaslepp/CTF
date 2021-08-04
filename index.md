@@ -56,7 +56,11 @@ We get <code>id_rsa:james13</code>. From the text we know that this is an SSH ke
 ``` bash
 ssh -i id_rsa james@<MACHINE_IP>
 ```
-...and use <code>james13</code> as the passphrase.
+...and use <code>james13</code> as the passphrase. From there ``` bash ls ``` and we get the <code>user.txt</code> file.
+	
+<code>thm{65c1aaf000506e56996822c6281e6bf7}</code>
+
+Next we need to somehow get into the <code>root</code> folder.
 
 # picoCTF
 
