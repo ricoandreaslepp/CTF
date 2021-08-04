@@ -61,6 +61,12 @@ ssh -i id_rsa james@<MACHINE_IP>
 <code>thm{65c1aaf000506e56996822c6281e6bf7}</code>
 
 Next we need to somehow get into the <code>root</code> folder.
+	
+Skipping the LinPEAS part for now...
+	
+With ``` cat /etc/crontab ```  we can see that there is a suspicious curl command running. We can exploit it by changing the ``` overpass.thm ```  domain name with ``` vim /etc/hosts ```  to our own system and then create the same directory with a ``` buildscript.sh ``` file in it which has the lines ``` chmod 777 /root ``` and ``` chmod 777 /root/root.txt ```. (definitely not the best way of doing it)
+
+<code>thm{7f336f8c359dbac18d54fdd64ea753bb}</code>
 
 # picoCTF
 
