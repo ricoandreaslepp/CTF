@@ -7,7 +7,7 @@ Just a webpage for various CTF challenges I've solved.
 
 ## Overpass
 ``` bash
-nmap -v <machine_ip>
+nmap -v <MACHINE_IP>
 ```
 Shows SSH on port 22 and an webpage on port 80. After that:
 
@@ -51,7 +51,12 @@ python3 ssh2john.py id_rsa > id_rsa.hash
 john id_rsa.hash 
 ```
 
-We get <code>id_rsa:james13</code>
+We get <code>id_rsa:james13</code>. From the text we know that this is an SSH key so we can try...
+	
+``` bash
+ssh -i id_rsa james@<MACHINE_IP>
+```
+...and use <code>james13</code> as the passphrase.
 
 # picoCTF
 
