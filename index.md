@@ -6,20 +6,20 @@ Just a webpage for various CTF challenges I've solved.
 # TryHackMe
 
 ## Overpass
-´´´ bash
+``` bash
 nmap -v <machine_ip>
-´´´
+```
 Shows SSH on port 22 and an webpage on port 80. After that:
 
-´´´ bash
+``` bash
 nmap -v --script=ssh-brute <machine_ip>
-´´´
+```
 
 Doesn't manage to brute-froce the credentials.
 
-´´´ bash
+``` bash
 nikto -host <machine_ip>
-´´´
+```
 ![Capture](https://user-images.githubusercontent.com/52963102/128154609-d44f494b-691b-4f93-84ad-0676e53ca06f.PNG)
 
 ...and on <code><machine_up>/admin</code> we find a login page.
