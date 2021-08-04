@@ -20,9 +20,16 @@ Doesn't manage to brute-froce the credentials.
 ``` bash
 nikto -host <machine_ip>
 ```
+
 ![Capture](https://user-images.githubusercontent.com/52963102/128154609-d44f494b-691b-4f93-84ad-0676e53ca06f.PNG)
 
-...and on <code><machine_up>/admin</code> we find a login page.
+...and on <code><machine_up>/admin</code> we find a login page. After setting up Burp-Suite for TryHackMe and examining the source code of the webpage I end up with a POST request curl command
+	
+``` bash
+curl -X POST -F "username=admin" -F "password=passwd" http:/<MACHINE_IP>/api/login
+```
+	
+with a failed response of <code>Incorrect credentials</code>
 
 
 # picoCTF
