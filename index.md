@@ -132,6 +132,10 @@ I'm not too familiar with JavaScript but the code isn't too difficult and after 
 
 # CTFLearn
 
+## Simple steganography 
+	
+Another very fun challenge!
+	
 ## Tux!
 	
 A very fun challenge:)
