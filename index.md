@@ -132,6 +132,10 @@ I'm not too familiar with JavaScript but the code isn't too difficult and after 
 
 # CTFLearn
 
+## Tux!
+	
+A very fun challenge:)
+	
 ## Wikipedia
 <code>Not much to go off here, but it’s all you need: Wikipedia and 128.125.52.138.</code>
 
