@@ -173,7 +173,7 @@ Tried <code>strings pho.jpg</code> but that got me nowhere so I used <code>xxd -
 	
 With <code>strings gandalf.jpg</code> we get 3 base64 encoded strings, the first one gives us a hint, so we use XOR on the other 2.
 	
-
+code here: https://github.com/ricoandreaslepp/CTF/blob/main/base64_xor.py
 	
 <code>CTFlearn{Gandalf.BilboBaggins}</code>
 	
