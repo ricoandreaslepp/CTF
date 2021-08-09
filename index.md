@@ -3,7 +3,7 @@ Just a webpage for various CTF challenges I've solved.
 
 <code>WARNING! There will be spoilers ahead</code>
 
-# RARCTF 2021
+# RaRCTF 2021
 
 ## Secure Uploader
 
@@ -149,6 +149,7 @@ I'm not too familiar with JavaScript but the code isn't too difficult and after 
 
 <code>picoCTF{53rv3r_53rv3r_53rv3r_53rv3r_53rv3r}</code>
 
+	
 # CTFLearn
 
 ## Simple steganography 
@@ -158,6 +159,23 @@ Another very fun challenge!
 ## Tux!
 	
 A very fun challenge:)
+	
+## Pho Is Tasty!
+	
+A fun challenge to show that sometimes different tools give you different outputs.
+	
+Tried <code>strings pho.jpg</code> but that got me nowhere so I used <code>xxd -cols 25 pho.jpg</code> and that clearly shows us the flag:
+![Capture](https://user-images.githubusercontent.com/52963102/128754322-bca3b2db-1c32-40dd-b6a6-920369ec75e1.PNG)
+	
+<code>
+	
+## GandalfTheWise
+	
+With <code>strings gandalf.jpg</code> we get 3 base64 encoded strings, the first one gives us a hint, so we use XOR on the other 2.
+	
+
+	
+<code>CTFlearn{Gandalf.BilboBaggins}</code>
 	
 ## Wikipedia
 <code>Not much to go off here, but it’s all you need: Wikipedia and 128.125.52.138.</code>
