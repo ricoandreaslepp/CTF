@@ -3,11 +3,22 @@ Just a webpage for various CTF challenges I've solved.
 
 <code>WARNING! There will be spoilers ahead</code>
 
+# RARCTF 2021
+
+## Secure Uploader
+
+os.path.join discards all previous parts if a path segment begins with /
+
+## lemonthinker
+
+## Fancy Button Generator
+
 # UIUCTF 2021
 
 ## CEO
 
 ## Baby_python(_fixed)
+italics and bold
 
 Ref:
 http://jgeralnik.github.io/
