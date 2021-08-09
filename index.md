@@ -5,6 +5,14 @@ Just a webpage for various CTF challenges I've solved.
 
 # UIUCTF 2021
 
+## CEO
+
+## Baby_python(_fixed)
+
+Ref:
+http://jgeralnik.github.io/
+https://irissec.xyz/articles/categories/other/2021-08-09/uiuctf-jails
+
 # TryHackMe
 
 ## Overpass
