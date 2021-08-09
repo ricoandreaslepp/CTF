@@ -344,3 +344,7 @@ And for the sake of it here's one more:
 
 <code>There is a technique called bruteforce. Message: q{vpln'bH_varHuebcrqxetrHOXEj No key! Just brute .. brute .. brute ... :D</code>
 
+# IDEAS
+	
+## .ws files (beginner)
+A random file with no extension with whitespace code in it
