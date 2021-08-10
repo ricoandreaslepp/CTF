@@ -151,6 +151,29 @@ I'm not too familiar with JavaScript but the code isn't too difficult and after 
 
 	
 # CTFLearn
+	
+## Reykjavik
+	
+This is my first assembly reverse challenge, so I will do an extended writeup for future reference. We first use <code>gdb</code> to see the code in assembly. Then use <code>set disassembly-flavor intel</code> for a better view and <code>disassemble main</code> to view the code.
+	
+In there we find a <code>strcmp</code> and a jump to some registry if:
+
+![Capture](https://user-images.githubusercontent.com/52963102/128850764-e2b1fd5f-3779-4f27-acfc-1446f8df7f98.PNG)
+	
+![Capture](https://user-images.githubusercontent.com/52963102/128850980-9b00365c-4d73-4f9d-9e08-c7cb647256a1.PNG)
+
+	So all we gotta do is set a breakpoint right before the jne (first <code>break *main</code>)so in our case <code>break *0x0000555555555170</code> and then run the code. At the breakpoint we use <code>info registers</code> to see that rax (full 32-bit of eax) is not zero so we use <code>set $eax=0</code> and with <code>continue</code> we get our flag.
+
+<code>
+
+-commands used (for future reference)
+* disassemble main
+* break *pointer
+* continue - run until next breakpoint
+* info registers
+* run <input>
+* ni
+* set $<variable>=<value>
 
 ## Simple steganography 
 	
