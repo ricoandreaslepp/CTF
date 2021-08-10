@@ -23,6 +23,8 @@ os.path.join discards all previous parts if a path segment begins with /
 
 aircrack-ng with _rockyou.txt_ gives us the flag
 
+<code>UIUCTF{nanotechnology}</code>
+
 ## Baby_python(_fixed)
 italics and bold
 
