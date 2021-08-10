@@ -21,6 +21,8 @@ os.path.join discards all previous parts if a path segment begins with /
 
 ## CEO
 
+aircrack-ng with _rockyou.txt_ gives us the flag
+
 ## Baby_python(_fixed)
 italics and bold
 
