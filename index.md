@@ -11,7 +11,15 @@ Just a webpage for various CTF challenges I've solved.
 
 ## Secure Uploader
 
-os.path.join discards all previous parts if a path segment begins with /
+After source code analysis we find the vulnerable part of the application:
+
+![Capture](https://user-images.githubusercontent.com/52963102/129102595-7268dcfd-2b91-4d49-9817-e9eeae7121f3.PNG)
+
+From the docs we know that _os.path.join_ discards all previous parts if a path segment begins with / so we just intercept the traffic with BurpSuite and change the filename:
+
+![Capture](https://user-images.githubusercontent.com/52963102/129102789-d6e6ce84-1b61-4047-82f4-242d7864128d.PNG)
+
+<code>rarctf{4lw4y5_r34d_th3_d0c5_pr0p3rly!-71ed16}</code>
 
 ## lemonthinker
 
