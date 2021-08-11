@@ -15,6 +15,12 @@ os.path.join discards all previous parts if a path segment begins with /
 
 ## lemonthinker
 
+During the CTF I managed to figure out the vulnerable part of the application, but after pondering on it for around 5h I didn't get too much further than that. So from the source code we see that our input on the website isn't properly validated, the only thing the code does is remove double quotes:
+
+![1](https://user-images.githubusercontent.com/52963102/129075269-06f49884-003f-4b43-aa86-b468d95d9d3a.PNG)
+
+
+
 ## Fancy Button Generator
 
 # UIUCTF 2021
