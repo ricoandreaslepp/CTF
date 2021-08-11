@@ -203,13 +203,15 @@ So all we gotta do is set a breakpoint right before the jne (first <code>break *
 <code>CTFlearn{Eye_L0ve_Iceland_}</code>
 
 -commands used (for future reference)
+``` bash
 * disassemble main
 * break *pointer
 * continue - run until next breakpoint
 * info registers
-* run <input>
+* run <input> 
 * ni
 * set $variable=value
+```
 
 ## Simple steganography 
 	
