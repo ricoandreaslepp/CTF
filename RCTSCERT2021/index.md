@@ -2,6 +2,25 @@
 
 ## Knock knock
 
+Tried to make it as detailed as possible for future reference on _ova_ files in CTFs.
+
+First I imported the file into Oracle VM and before booting I had to setup the network so I went to Settings->Network->Adapter 1->Bridged Adapter->My WIFI. After that it was all bridged so I could access it through my computer's terminal. Opening the VM itself we get a login prompt with a username and a password, but after trying at it for a while I gave up and tried something else.
+
+I could ping it from my WSL2 Kali (the ip of the VM was shown on the screen when it was booting, but could also be found by nmap on the WSL2 for internal addresses) and I decided to run an nmap scan which showed this:
+
+![image](https://user-images.githubusercontent.com/52963102/129182805-05c0e1b2-2afe-46cc-afb7-a72549c33ba9.png)
+
+After connecting to the VM through ftp, using anonymous as the username and any password and then setting passive mode with ```pass``` we find a _flag.txt_ file with ls, but after doing ```get flag.txt``` and opening the file, it's just a bait flag that tells us to look at another door (referring to ports I assumed). Now our first nmap scan only showed port 21 as open, so this baffeled me for a bit, but when we connected to the VM through ftp it gave us 3 "doors" to actually examine with ports 7000, 8000, 9000. Since the name of the challenge is "knock knock" I googled port knocking and found a whole wikipedia page about the topic. So after using netcat to try and connect to each of the ports and running nmap again on the VM we find that port 22 with ssh has opened up.
+
+At the start of the challenge we were given an _id_rsa_ file aswell so trying to connect to the VM with ```ssh -i id_rsa <VM_IP>``` was an idea that proved to be unsuccessful. So I tried generating a public key from the private key and then using the private key, which proved to be successful:
+
+![image](https://user-images.githubusercontent.com/52963102/129180670-2babbf1a-4915-45cc-bcfc-01015ce2e614.png)
+
+<code>flag{kn0ck1ng_0n_d00rs_1s_p0l1t3}</code>
+
+This was most probably my favorite challenge of all time, I learned a lot and had tons of fun figuring out what to do next.
+
+Lessons? Well the VM network bridging was super cool, definitely a lot to learn from that and more to experiment with. The OpenSSH RSA private key and public key, I'm getting an idea of what they are and how they work, but in order for me to adequately explain it to someone else, it will take a little more time and understanding.
 
 ## Decrypting the payload
 
