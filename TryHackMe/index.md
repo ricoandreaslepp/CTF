@@ -33,7 +33,7 @@ Still doesn't help us even after using the names as usernames from the About Us 
 
 ![Capture](https://user-images.githubusercontent.com/52963102/128165302-1c3da5e3-e644-4fbc-b37f-b885b2b9bef8.PNG)
 
-After setting the cookie <code>SessionToken</code> we get a new page with an RSA private key. Save it in a file named <code>id_rsa</code> then get <code>ssh2john.py</code with:
+After setting the cookie <code>SessionToken</code> we get a new page with an RSA private key. Save it in a file named <code>id_rsa</code> then get <code>ssh2john.py</code> with:
 	
 ``` bash
 wget https://raw.githubusercontent.com/magnumripper/JohnTheRipper/bleeding-jumbo/run/ssh2john.py	
