@@ -11,20 +11,7 @@ Definitely the easiest CTF I've done so far, but nonetheless tons of fun. I've i
 
 Though it shouldn't have been the hardest CTF, it really took a huge hit on me and I only managed to solve 3 challenges for a sad total of 120 points. After the initial shock though I was able to solve quite a few more and made some writeups for them aswell.
 
-# UIUCTF 2021
-
-## CEO
-
-aircrack-ng with _rockyou.txt_ gives us the flag
-
-<code>UIUCTF{nanotechnology}</code>
-
-## Baby_python(_fixed)
-italics and bold
-
-Ref:
-http://jgeralnik.github.io/
-https://irissec.xyz/articles/categories/other/2021-08-09/uiuctf-jails
+# <a href="UIUCTF2021">UIUCTF 2021</a>
 
 # <a href="TryHackMe">TryHackMe</a>
 
