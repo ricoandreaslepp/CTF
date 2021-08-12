@@ -22,6 +22,5 @@ A very good beginner/intermediate webpage for learning well just about everythin
 # <a href="CTFLearn">CTFLearn</a>
 
 # <a href="ideas">IDEAS</a>
-	
-## .ws files (beginner)
-A random file with no extension with whitespace code in it
+
+Some ideas for making CTF challenges
