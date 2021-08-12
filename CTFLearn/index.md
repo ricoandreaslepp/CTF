@@ -10,7 +10,7 @@ In there we find a <code>strcmp</code> and a jump to some registry if:
 	
 ![Capture](https://user-images.githubusercontent.com/52963102/128850980-9b00365c-4d73-4f9d-9e08-c7cb647256a1.PNG)
 
-So all we gotta do is set a breakpoint right before the jne (first <code>break *main</code>)so in our case <code>break *0x0000555555555170</code> and then run the code. At the breakpoint we use <code>info registers</code> to see that rax (full 32-bit of eax) is not zero so we use <code>set $eax=0</code> and with <code>continue</code> we get our flag.
+So all we gotta do is set a breakpoint right before the jne (first <code>break *main</code>) so in our case <code>break *0x0000555555555170</code> and then run the code. At the breakpoint we use <code>info registers</code> to see that rax (full 32-bit of eax) is not zero so we use <code>set $eax=0</code> and with <code>continue</code> we get our flag.
 
 <code>CTFlearn{Eye_L0ve_Iceland_}</code>
 
