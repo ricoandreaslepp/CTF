@@ -12,7 +12,7 @@ I could ping it from my WSL2 Kali (the ip of the VM was shown on the screen when
 
 After connecting to the VM through ftp, using anonymous as the username and any password and then setting passive mode with ```pass``` we find a _flag.txt_ file with ls, but after doing ```get flag.txt``` and opening the file, it's just a bait flag that tells us to look at another door (referring to ports I assumed). Now our first nmap scan only showed port 21 as open, so this baffeled me for a bit, but when we connected to the VM through ftp it gave us 3 "doors" to actually examine with ports 7000, 8000, 9000. Since the name of the challenge is "knock knock" I googled port knocking and found a whole wikipedia page about the topic. So after using netcat to try and connect to each of the ports and running nmap again on the VM we find that port 22 with ssh has opened up.
 
-At the start of the challenge we were given an _id_rsa_ file aswell so trying to connect to the VM with ```ssh -i id_rsa <VM_IP>``` was an idea that proved to be unsuccessful. So I tried generating a public key from the private key and with that we got a username and trying to log in now with the private key proved to be successful:
+At the start of the challenge we were given an _id_rsa_ file aswell so trying to connect to the VM with ```ssh -i id_rsa <VM_IP>``` was an idea that proved to be unsuccessful. So I tried generating a public key from the private key file and with that we got a username and trying to log in now with the private key file proved to be successful:
 
 ![image](https://user-images.githubusercontent.com/52963102/129180670-2babbf1a-4915-45cc-bcfc-01015ce2e614.png)
 
@@ -20,7 +20,7 @@ At the start of the challenge we were given an _id_rsa_ file aswell so trying to
 
 This was most probably my favorite challenge of all time, I learned a lot and had tons of fun figuring out what to do next.
 
-Lessons? Well the VM network bridging was super cool, definitely a lot to learn from that and more to experiment with. The OpenSSH RSA private key and public key, I'm getting an idea of what they are and how they work, but in order for me to adequately explain it to someone else, it will take a little more time and understanding. Port knocking was an interesting concept that I hadn't really looked into before.
+Lessons? Well the VM network bridging was super cool, definitely a lot to learn from that and more to experiment with. The OpenSSH RSA private key and public key, I'm getting an idea of what they are and how they work, but in order for me to adequately explain it to someone else, it will take a little more time and understanding. I did learn though, that usually when generating public/private key pair, their both generated in the private key FILE not just private key, so that's why you can extract the public key from there. Port knocking was an interesting concept that I hadn't really looked into before.
 
 ## Decrypting the payload
 
