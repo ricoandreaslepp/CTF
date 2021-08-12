@@ -12,9 +12,9 @@ I could ping it from my WSL2 Kali (the ip of the VM was shown on the screen when
 
 After connecting to the VM through ftp, using anonymous as the username and any password and then setting passive mode with ```pass``` we find a _flag.txt_ file with ls, but after doing ```get flag.txt``` and opening the file, it's just a bait flag that tells us to look at another door (referring to ports I assumed). Now our first nmap scan only showed port 21 as open, so this baffeled me for a bit, but when we connected to the VM through ftp it gave us 3 "doors" to actually examine with ports 7000, 8000, 9000. Since the name of the challenge is "knock knock" I googled port knocking and found a whole wikipedia page about the topic. So after using netcat to try and connect to each of the ports in the specified order and running nmap again on the VM we find that port 22 with ssh has opened up, as wikipedia says:
 
-<code>
+``` bash
 In computer networking, port knocking is a method of externally opening ports on a firewall by generating a connection attempt on a set of prespecified closed ports. Once a correct sequence of connection attempts is received, the firewall rules are dynamically modified to allow the host which sent the connection attempts to connect over specific port(s).
-</code>
+```
 
 At the start of the challenge we were given an _id_rsa_ file aswell so trying to connect to the VM with ```ssh -i id_rsa <VM_IP>``` was an idea that proved to be unsuccessful. So I tried generating a public key from the private key file and with that we got a username and trying to log in now with the private key file proved to be successful:
 
