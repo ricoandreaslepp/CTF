@@ -3,7 +3,8 @@ Just a webpage for various CTF challenges I've solved.
 
 <code>WARNING! There will be spoilers ahead</code>
 
-<a href="CRTSCERT2021"># RCTS CERT 2021</a> 
+# RCTS CERT CTF 2021
+<a href="RCTSCERT2021"></a> 
 
 # RaRCTF 2021
 
