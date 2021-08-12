@@ -4,8 +4,8 @@
 
 If I ever do write any writeups with the distinct goal of publishing then I will most definitely either make them myself or refer to the used sources.
 
-So **tldr;** aim of the repo is to learn.
+## **tldr;** aim of the repo is to learn.
 
-# And most importantly: **NEVER use any of the tools or techniques mentioned to _crack/hack/sniff/penetrate/etc_ any _data/networks/computers/etc_ that you do not own or have permission to work with**
+## And most importantly: **NEVER use any of the tools or techniques mentioned to _crack/hack/sniff/penetrate/etc_ any _data/networks/computers/etc_ that you do not own or have permission to work with**
 
 Website on https://ricoandreaslepp.github.io/CTF/
