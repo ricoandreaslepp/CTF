@@ -20,3 +20,5 @@ From there I found _oletools_ as a way of analyzing and extracting macros from _
 After cleaning the output up and decoding with base64 we get 2 parts of the flag and after combining and reversing we end up with the flag. Honestly the cleaning part turned out to be rather tedious, because I found no way to actually extract the hex strings and copying doesn't help us either. Eventually though I remembered, that _Sublime Text 3_ is an amazing editor and ended up editing all the 353 lines of output at once to get the hex strings and then a quick python script to join all the lines, the output of which I piped right into decode. The command looked like this: ```bash python3 join.py | base64 -d > out.txt```
 
 <code>flag{m4cr0_3n4bl3d_d0cs_4r3_d4ng3r0us}</code>
+
+Real-world lessons? -> Don't ever open suspicious files sent to you by emails or any other forms of communication, they can not just get a reverse shell on your private network and read your data, but also compromise a whole LAN. Phishing scams are getting more advanced just as every other field of IT, so we must learn and adapt.
