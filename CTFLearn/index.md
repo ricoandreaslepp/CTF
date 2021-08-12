@@ -25,6 +25,31 @@ So all we gotta do is set a breakpoint right before the jne (first <code>break *
 * set $variable=value
 ```
 
+-useful to know
+``` bash 
+* the function prologue is:
+push ebp
+mov ebp, esp
+* the function epilogue is:
+mov esp,ebp
+pop ebp
+ret
+
+------------------- 
+argument variables
+return address
+-ebp
+local variables
+(all separated by 4 bytes)
+-------------------
+ebp +- allows access to different variables
+
+-examples
+** mov eax,DWORD PTR [ebp+0xc] ; sets the eax value to the second argument variable
+** mov eax,ebx ; sets eax value to ebx value
+```
+ 
+
 ## Simple steganography 
 	
 Another very fun challenge!
