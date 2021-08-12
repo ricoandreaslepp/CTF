@@ -20,7 +20,7 @@ At the start of the challenge we were given an _id_rsa_ file aswell so trying to
 
 This was most probably my favorite challenge of all time, I learned a lot and had tons of fun figuring out what to do next.
 
-Lessons? Well the VM network bridging was super cool, definitely a lot to learn from that and more to experiment with. The OpenSSH RSA private key and public key, I'm getting an idea of what they are and how they work, but in order for me to adequately explain it to someone else, it will take a little more time and understanding.
+Lessons? Well the VM network bridging was super cool, definitely a lot to learn from that and more to experiment with. The OpenSSH RSA private key and public key, I'm getting an idea of what they are and how they work, but in order for me to adequately explain it to someone else, it will take a little more time and understanding. Port knocking was an interesting concept that I hadn't really looked into before.
 
 ## Decrypting the payload
 
