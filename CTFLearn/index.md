@@ -65,7 +65,7 @@ A fun challenge to show that sometimes different tools give you different output
 Tried <code>strings pho.jpg</code> but that got me nowhere so I used <code>xxd -cols 25 pho.jpg</code> and that clearly shows us the flag:
 ![Capture](https://user-images.githubusercontent.com/52963102/128754322-bca3b2db-1c32-40dd-b6a6-920369ec75e1.PNG)
 	
-<code>
+<code>CTFlearn{I_Love_Pho!!!}</code>
 	
 ## GandalfTheWise
 	
