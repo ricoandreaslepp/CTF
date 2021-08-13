@@ -8,7 +8,7 @@ aircrack-ng with _rockyou.txt_ gives us the flag
 
 ## Back to basics
 
-Struggled with this quite a bit, but eventually I triumphed. So it seems that the _main.py_ script just decodes the flag file with bases ranging from 2 to 36 an unknown number of times. So naturally I tried to decode by just writing a script that iterates the key length from 1 to inf and uses a try-except decoding scheme with every possible base. Since we know that the flag will start with 'uiuctf{' we can just end when we find that.
+Struggled with this quite a bit, cause the different datatypes and encoding seemed complex, but eventually I triumphed and the solution actually turned out to be rather simple. So it seems that the _main.py_ script just decodes the flag file with bases ranging from 2 to 36 an unknown number of times. So naturally I tried to decode by just writing a script that iterates the key length from 1 to inf and uses a try-except decoding scheme with every possible base. Since we know that the flag will start with 'uiuctf{' we can just end when we find that.
 
 ```python
 def brute():
