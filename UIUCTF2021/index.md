@@ -49,6 +49,7 @@ def decrypt(key, flag):
     ciphertext = cipher.decrypt(flag).decode()
     return ciphertext
 ```
+<code>uiuctf{omae_ha_mou_shindeiru_b9e5f9}</code>
 
 ## Baby_python(_fixed)
 italics and bold
