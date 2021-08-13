@@ -12,27 +12,26 @@ Struggled with this quite a bit, but eventually I triumphed. So it seems that th
 
 ```python
 def brute():
-	with open("flag_enc", "rb") as f:
-		enc = f.read()
+    with open("flag_enc", "rb") as f:
+	enc = f.read()
 
+    out = enc
+    key = 1
+    while True:
 	out = enc
-	key = 1
-	while True:
-		out = enc
-		print("Trying key of length:", key)
-		for i in range(key):
-
-			for base in range(2, 37):
-				try:
-					out = base_n_decode(out, base).decode()
-					print(f"Used base: {base}")
-					break
-				except:
-					continue
-		if 'uiuctf' in out:
-			return out
-		else:
-			key += 1
+	print("Trying key of length:", key)
+	for i in range(key):
+       	    for base in range(2, 37):
+		try:
+		    out = base_n_decode(out, base).decode()
+		    print(f"Used base: {base}")
+		    break
+		except:
+		    continue
+	if 'uiuctf' in out:
+	    return out
+	else:
+	    key += 1
 ```
 
 Eventually we get the flag:
