@@ -38,6 +38,18 @@ Eventually we get the flag:
 
 <code>uiuctf{r4DixAL}</code>
 
+## dhke_intro
+
+Another crypto challenge that was supposed to be simple, but gave me some trouble because of the different numeral systems. Eventually I realised that it's just an AES encryption and since I have the IV and the _generate_key_ function I can just brute force it. An elegant solution for this challenge:
+
+```python
+def decrypt(key, flag):
+    global iv, found
+    cipher = AES.new(key, AES.MODE_CFB, iv)
+    ciphertext = cipher.decrypt(flag).decode()
+    return ciphertext
+```
+
 ## Baby_python(_fixed)
 italics and bold
 
