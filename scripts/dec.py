@@ -3,12 +3,10 @@ from gmpy2 import mpz, to_binary
 
 ALPHABET = bytearray(b"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ#")
 
-# string or bytes, base in integer
 def base_n_decode(bytes_in, base):
 	bytes_out = to_binary(mpz(bytes_in, base=base))[:1:-1]
 	return bytes_out
 
-# I need key to decrypt
 def decrypt(bytes_in, bytes_key):
 	out = bytes_in
 	for i in bytes_key:
