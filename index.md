@@ -3,6 +3,8 @@ Just a webpage for various CTF challenges I've solved.
 
 <code>WARNING! There will be spoilers ahead</code>
 
+# <a href="HPCTF2021">Hacker's Playground CTF 2021</a>
+
 # <a href="RCTSCERT2021">RCTS CERT CTF 2021</a> 
 
 Definitely the easiest CTF I've done so far, but nonetheless tons of fun. I've included writeups for 2 challenges that I immensely struggled with during the competition and eventually still didn't manage to solve. After the CTF I rested my head a little and got some new ideas by looking at little parts of provided writeups and then tried again.
