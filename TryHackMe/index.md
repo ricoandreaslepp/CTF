@@ -2,6 +2,18 @@
 
 ## Reversing ELF
 
+First 3 were easily solvable with just the strings command.
+
+crackme4 can be solved with <code>ltrace</code> or using <code>gdb</code> 
+```
+1) info functions
+2) breakpoint at strcmp
+3) run test
+4) show rax and rdx strings with x/s 
+```
+
+the rest of them can be solved by decompiling with <code>ghidra</code> and then looking at the main function to reverse.
+
 ## Overpass
 ``` bash
 nmap -v <MACHINE_IP>
