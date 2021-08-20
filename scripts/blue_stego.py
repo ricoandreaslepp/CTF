@@ -11,7 +11,7 @@ def xor(default_pix, pix_arr):
             values.append(default_pix[i]^pix)
     return values
     
-def guessing_god(val):
+def find(val):
 
     ans = ""
     result = "0"
@@ -47,7 +47,7 @@ def main():
 
     values = xor(default_pix, special_pix)
     #print(values)
-    ans = guessing_god(values)
+    ans = find(values)
     
     print(ans)
 
