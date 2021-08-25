@@ -17,6 +17,8 @@ Though it shouldn't have been the hardest CTF, it really took a huge hit on me a
 
 # <a href="UIUCTF2021">UIUCTF 2021</a>
 
+Definitely a fun ctf with tons of stuff to learn.
+
 # <a href="TryHackMe">TryHackMe</a>
 
 A very good beginner/intermediate webpage for learning well just about everything about computers and tech.
