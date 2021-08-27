@@ -12,43 +12,7 @@ In there we find a <code>strcmp</code> and a jump to some registry if:
 
 So all we gotta do is set a breakpoint right before the jne (first <code>break *main</code>) so in our case <code>break *0x0000555555555170</code> and then run the code. At the breakpoint we use <code>info registers</code> to see that rax (full 32-bit of eax) is not zero so we use <code>set $eax=0</code> and with <code>continue</code> we get our flag.
 
-<code>CTFlearn{Eye_L0ve_Iceland_}</code>
-
--commands used (for future reference)
-``` bash
-* disassemble main
-* break *pointer
-* continue - run until next breakpoint
-* info registers
-* run <input> 
-* ni
-* set $variable=value
-```
-
--useful to know
-``` bash 
-* the function prologue is:
-push ebp
-mov ebp, esp
-* the function epilogue is:
-mov esp,ebp
-pop ebp
-ret
-
-------------------- 
-argument variables
-return address
--ebp
-local variables
-(all separated by 4 bytes)
--------------------
-ebp +- allows access to different variables
-
--examples
-** mov eax,DWORD PTR [ebp+0xc] ; sets the eax value to the second argument variable
-** mov eax,ebx ; sets eax value to ebx value
-```
- 
+<code>CTFlearn{Eye_L0ve_Iceland_}</code> 
 
 ## Simple steganography 
 	
