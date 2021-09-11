@@ -1,14 +1,30 @@
-## Linux
+# Linux
 id <user> -> list user and group information
 sudo -l -> show commands that can be run with sudo
   -> check https://gtfobins.github.io/ if any programs can be used for privesc
   
-## Networking
+# Web
 
-## pwn
+## Login
+  _hydra_ for login brute-forcing
 
-## rev
+## Upload vulns
+  
+Cookies
 
-## Images
+XXS
+XXE
+  
+SQL injections
+  - cheatsheet
 
-## Videos
+# pwn
+
+# rev
+_gdb_ 
+
+# Misc
+## images
+## audio
+## videos
+## malware
