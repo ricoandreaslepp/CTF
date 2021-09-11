@@ -1,3 +1,6 @@
+# readme
+A cheatsheet for CTFs, that will eventually hopefully have everything that I know of.
+
 # Linux
 id <user> -> list user and group information <br>
 sudo -l -> show commands that can be run with sudo <br>
