@@ -2,8 +2,9 @@
 
 ## Pickle Rick
 
-Starting with ``` nmap -A -T5 <MACHINE_IP>``` we find _ssh_ open on port 22 and a _http_ webserver on port (80), both were expected. 
+Starting with ``` nmap -A -T5 <MACHINE_IP>``` we find _ssh_ open on port 22 and a _http_ webserver on port (80), both were expected. Opening the page and viewing the source we find a username R1ckRul3s, tried ```ssh R1ckRul3s@<MACHINE_IP>``` which didn't work, so just save the username for later. Running _gobuster_ and _nikto_ we find three accessible directories _/robots.txt_, _/assets_ and _/login.php_. The second one had nothing useful, but the other two were a rather crucial find. I tried brute-forcing the login with _hydra_, but that got me nowhere, so after looking in the robots.txt file we get a random string that proved later to be the password.
 
+On the page we find a console on the machine. _whoami_ tells us we are logged in as www-data. Since it's a webshell it doesn't actually save the state so we're gonna have to keep that in mind. using _ls -la_ we find our first flag in a "super secret" txt file. _cat_ and _more_ are disabled on the prompt, but we can use _less_. Using _less clue.txt_, we get and idea of where the second flag is. Navigating into _/home/rick_ we get it easily. No clue for the last flag, but it makes sense to check the root folder. _ls -la /_ tells us that we can't access the root folder, but _sudo -l_ tells us that we can run everything as sudo (definitely the worst security practice so far). So we get our last flag from the root folder with sudo.
 
 ## Reversing ELF
 
