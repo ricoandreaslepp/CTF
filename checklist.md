@@ -10,6 +10,8 @@ sudo -l -> show commands that can be run with sudo <br>
   run _dirbuster_
   run _nikto_
   
+  always try default username:passwords combos
+  
 ## Login
   _hydra_ for login brute-forcing
 
