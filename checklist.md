@@ -7,7 +7,9 @@ sudo -l -> show commands that can be run with sudo <br>
   -> check https://gtfobins.github.io/ if any programs can be used for privesc <br>
   
 # Web
-
+  run _dirbuster_
+  run _nikto_
+  
 ## Login
   _hydra_ for login brute-forcing
 
