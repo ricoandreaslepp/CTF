@@ -1,5 +1,10 @@
 # TryHackMe
 
+## Pickle Rick
+
+Starting with ``` nmap -A -T5 <MACHINE_IP>``` we find _ssh_ open on port 22 and a _http_ webserver on port (80), both were expected. 
+
+
 ## Reversing ELF
 
 First 3 were easily solvable with just the strings command.
