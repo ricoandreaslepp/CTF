@@ -5,6 +5,8 @@ A cheatsheet for CTFs, that will eventually hopefully have everything that I kno
 id <user> -> list user and group information <br>
 sudo -l -> show commands that can be run with sudo <br>
   -> check https://gtfobins.github.io/ if any programs can be used for privesc <br>
+ 
+_wget_ and run _LinPeas.sh_
   
 # Web
   run _dirbuster_
