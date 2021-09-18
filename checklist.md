@@ -33,7 +33,7 @@ _gdb_
 # Misc
 ## images
 
-  _strings_, _binwalk_, _steghide_, _stegsolve_, _foremost_, _exiftool_
+  _strings_, _zsteg_, _xxd_, _binwalk_, _steghide_, _stegsolve_, _foremost_, _exiftool_
   
 ## audio
 ## videos
