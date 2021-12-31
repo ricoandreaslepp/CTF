@@ -48,6 +48,8 @@ _gdb_
 * powerpoints and similar can be unzipped
   
  _olevba_, 
+
+  - Malware detection https://www.virustotal.com/gui/home/upload
   
 ## yeah
 strings _filename_ | less -> for safety
