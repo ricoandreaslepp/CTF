@@ -35,8 +35,15 @@ _gdb_
 # Misc
 ## images
 
+  - https://stegonline.georgeom.net/upload
+  
   _strings_, _zsteg_, _xxd_, _binwalk_, _steghide_, _stegsolve_, _foremost_, _exiftool_
+  
+  
   
 ## audio
 ## videos
 ## malware
+* powerpoints and similar can be unzipped
+  
+ _olevba_, 
