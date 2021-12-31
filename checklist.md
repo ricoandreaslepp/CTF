@@ -36,6 +36,7 @@ _gdb_
 ## images
 
   - https://stegonline.georgeom.net/upload
+    -> bit plane browsing, extract data, show info and strings
   
   _strings_, _zsteg_, _xxd_, _binwalk_, _steghide_, _stegsolve_, _foremost_, _exiftool_
   
