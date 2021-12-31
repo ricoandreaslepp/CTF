@@ -48,3 +48,6 @@ _gdb_
 * powerpoints and similar can be unzipped
   
  _olevba_, 
+  
+## yeah
+strings _filename_ | less -> for safety
