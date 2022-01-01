@@ -34,7 +34,9 @@ _gdb_
 
 # Misc
 ## images
-
+  
+  - https://www.photopea.com/
+    -> online photoshop
   - https://stegonline.georgeom.net/upload
     -> bit plane browsing, extract data, show info and strings
   
