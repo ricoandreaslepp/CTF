@@ -35,7 +35,7 @@ _gdb_
 # Misc
 ## images
 
-  QR Code, MaxiCode
+  Varius 2D codes -> QR Code, MaxiCode, Aztec etc
   
   - https://www.photopea.com/
     -> online photoshop
