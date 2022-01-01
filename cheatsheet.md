@@ -34,6 +34,8 @@ _gdb_
 
 # Misc
 ## images
+
+  QR Code, MaxiCode
   
   - https://www.photopea.com/
     -> online photoshop
