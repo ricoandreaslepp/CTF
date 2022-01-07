@@ -45,10 +45,8 @@ _gdb_
   _strings_, _zsteg_, _xxd_, _binwalk_, _steghide_, _stegsolve_, _foremost_, _exiftool_, _stat_, 
   
  _imagemagick_ and _ffmpeg_
-  <code> 
-  ffmpeg -i video.mp4 -vf mpdecimate,setpts=N/FRAME_RATE/TB frames/frame_%3d.jpg # get frames from video
-  convert frames/frame_*.jpg -compose Darken -layers Flatten result.jpg # join multiple images of frames together
-  </code>
+  <code> ffmpeg -i video.mp4 -vf mpdecimate,setpts=N/FRAME_RATE/TB frames/frame_%3d.jpg # get frames from video </code>
+  <code> convert frames/frame_*.jpg -compose Darken -layers Flatten result.jpg # join multiple images of frames together </code>
   
   
 ## audio
