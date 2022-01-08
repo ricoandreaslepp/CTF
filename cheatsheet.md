@@ -48,6 +48,7 @@ _gdb_
   
  _imagemagick_ and _ffmpeg_
   <code> ffmpeg -i video.mp4 -vf mpdecimate,setpts=N/FRAME_RATE/TB frames/frame_%3d.jpg # get frames from video </code>
+  <br>
   <code> convert frames/frame_*.jpg -compose Darken -layers Flatten result.jpg # join multiple images of frames together </code>
   
   
