@@ -59,7 +59,7 @@ _gdb_
 ## malware
 * powerpoints and similar can be unzipped
   
- _olevba_, 
+ _olevba_
 
   - Malware detection https://www.virustotal.com/gui/home/upload
   
