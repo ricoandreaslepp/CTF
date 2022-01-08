@@ -14,6 +14,8 @@ _wget_ and run _LinPeas.sh_
   run _dirbuster_
   run _nikto_
   
+  * DON't FORGET THAT SERVERS HOST WEBSITES (aka run nmap)
+  
   always try default username:passwords combos
   
 ## Login
@@ -25,9 +27,6 @@ Cookies
 
 XXS
 XXE
-  
-SQL injections
-  - cheatsheet
 
 # pwn
 
@@ -35,6 +34,10 @@ SQL injections
 _gdb_ 
 
 # Misc
+
+## wireshark
+- file extraction: https://www.sneakymonkey.net/2017/03/03/pcap-file-extraction/
+  
 ## images
 
   Varius 2D codes -> QR Code, MaxiCode, Aztec etc
@@ -47,12 +50,17 @@ _gdb_
   _strings_, _zsteg_, _xxd_, _binwalk_, _steghide_, _stegsolve_, _foremost_, _exiftool_, _stat_, 
   
  _imagemagick_ and _ffmpeg_
-  <br>
-  <code> ffmpeg -i video.mp4 -vf mpdecimate,setpts=N/FRAME_RATE/TB frames/frame_%3d.jpg # get frames from video </code><br>
+  <br><code> ffmpeg -i video.mp4 -vf mpdecimate,setpts=N/FRAME_RATE/TB frames/frame_%3d.jpg # get frames from video </code><br>
   <code> convert frames/frame_*.jpg -compose Darken -layers Flatten result.jpg # join multiple images of frames together </code>
   
   
 ## audio
+  - audacity
+    * audio spectrogram -> "a spectrogram is a visual representation of the spectrum of frequencies of sound, or other signals, as they vary with time." Basically, it is a method to visualize sound and signals. Can pretty much hide anything from messages to images and so on.
+   
+  - a butt load of decoders
+    * https://www.reddit.com/r/RTLSDR/comments/1e37d0/linux_software_to_decode_digital_modes/
+  
 ## videos
   - ffmpeg and imagemagick
     -> https://gist.github.com/sulram/0c8a95fc90f23e860b9a
