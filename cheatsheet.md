@@ -58,7 +58,7 @@ _gdb_
   
   **exiftool**<br>
     * look at image size
-    * either use hex editor or <code>convert in.jpg -resize INTxINT out.jpg</code>
+    * either use hex editor (remember little endian) or <code>convert in.jpg -resize INTxINT out.jpg</code>
   
  **imagemagick and ffmpeg**
   <br><code> ffmpeg -i video.mp4 -vf mpdecimate,setpts=N/FRAME_RATE/TB frames/frame_%3d.jpg # get frames from video </code><br>
