@@ -37,6 +37,8 @@ _gdb_
 ## Android APKs
   1) APK decompiler https://www.decompiler.com/, download zip file
   2) Look into _/Resources/AndroidManifest.xml_ and then search _/sources_ for _MainActivity.java_ and work on from there. _R.java_ could also be of use.
+  
+  Reversing guide and exercises: https://www.ragingrock.com/AndroidAppRE/
 
 # Misc
 
