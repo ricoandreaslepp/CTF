@@ -56,11 +56,11 @@ _gdb_
   
   _strings_, _zsteg_, _xxd_, _binwalk_, _steghide_, _stegsolve_, _foremost_, _stat_, 
   
-  _exiftool_
+  **exiftool**<br>
     * look at image size
     * either use hex editor or <code>convert in.jpg -resize INTxINT out.jpg</code>
   
- _imagemagick_ and _ffmpeg_
+ **imagemagick and ffmpeg**
   <br><code> ffmpeg -i video.mp4 -vf mpdecimate,setpts=N/FRAME_RATE/TB frames/frame_%3d.jpg # get frames from video </code><br>
   <code> convert frames/frame_*.jpg -compose Darken -layers Flatten result.jpg # join multiple images of frames together </code>
   
