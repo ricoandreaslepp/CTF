@@ -35,7 +35,8 @@ _gdb_
   
   
 ## Android APKs
-  - APK decompiler https://www.decompiler.com/
+  1) APK decompiler https://www.decompiler.com/, download zip file
+  2) Look into _/Resources/AndroidManifest.xml_ and then search _/sources_ for _MainActivity.java_ and work on from there. _R.java_ could also be of use.
 
 # Misc
 
