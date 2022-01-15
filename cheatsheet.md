@@ -87,4 +87,5 @@ _gdb_
   - Malware detection https://www.virustotal.com/gui/home/upload
   
 ## yeah
-strings _filename_ | less -> for safety
+1) strings _filename_ | less -> for safety
+2) use telnet to connect to a port with tcp
