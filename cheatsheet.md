@@ -85,7 +85,9 @@ _gdb_
  _olevba_
 
   - Malware detection https://www.virustotal.com/gui/home/upload
-  
-## yeah
-1) strings _filename_ | less -> for safety
-2) use telnet to connect to a port with tcp
+ 
+# Useful for CTFs
+
+* https://github.com/welchbj/ctf/blob/master/docs/pcap.md
+* https://github.com/JohnHammond/ctf-katana
+
