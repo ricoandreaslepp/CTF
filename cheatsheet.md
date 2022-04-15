@@ -43,6 +43,7 @@ _gdb_
 # Misc
 
 ## wireshark
+- https://github.com/welchbj/ctf/blob/master/docs/pcap.md
 - file extraction: https://www.sneakymonkey.net/2017/03/03/pcap-file-extraction/
   
 ## images
@@ -87,7 +88,6 @@ _gdb_
   - Malware detection https://www.virustotal.com/gui/home/upload
  
 # Useful for CTFs
-
-* https://github.com/welchbj/ctf/blob/master/docs/pcap.md
+  
 * https://github.com/JohnHammond/ctf-katana
 
