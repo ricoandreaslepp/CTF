@@ -7,14 +7,14 @@ https://www.exploit-db.com/
 id <user> -> list user and group information <br>
 sudo -l -> show commands that can be run with sudo <br>
   -> check https://gtfobins.github.io/ if any programs can be used for privesc <br>
+
+a lot of interesting files to check (RTFM book)
  
 _wget_ and run _LinPeas.sh_
   
 # Web
   run _dirbuster_
   run _nikto_
-  
-  * DON't FORGET THAT SERVERS HOST WEBSITES (aka run nmap)
   
   always try default username:passwords combos
   
@@ -82,6 +82,7 @@ _gdb_
 ## malware
 * powerpoints and similar can be unzipped
 * _vbaProject.bin_ contains macros
+* ProcessHacker 2 can help with c&c or similar
   
  _olevba_
 
