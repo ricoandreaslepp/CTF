@@ -34,6 +34,12 @@ _wget_ and run _LinPeas.sh_
 - Predictable cookies or sessions
 - XXS
 - XXE
+  
+# Crypto
+  
+bytes.fromhex()
+base64.b64encode(), base64.b64decode()
+Crypto.Util.number
 
 # pwn
 Python pwn library
