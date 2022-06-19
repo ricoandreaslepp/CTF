@@ -40,6 +40,8 @@ _wget_ and run _LinPeas.sh_
 bytes.fromhex()
 base64.b64encode(), base64.b64decode()
 Crypto.Util.number
+  
+  <code>byte_xor.py</code> in scripts
 
 # pwn
 Python pwn library
