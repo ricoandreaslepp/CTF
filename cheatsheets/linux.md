@@ -14,5 +14,5 @@ netstat
   2) <code>export TERM=xterm-256color</code> gives access to term commands (clear etc)
   3) background CTRL+Z, <code>stty raw -echo; fg</code> (turn off our own terminal echo - gives tab autocompletes, arrow keys and CTRL+C kills procs, then foregrounds the spawned shell).
 
-a lot of interesting files to check (RTFM book)
- run _LinPeas.sh_
+a lot of interesting files to check (RTFM book)<br>
+run _LinPeas.sh_
