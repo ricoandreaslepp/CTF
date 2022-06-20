@@ -1,6 +1,6 @@
 # Linux
-id <user> -> list user and group information <br>
-sudo -l -> show commands that can be run with sudo <br>
+`id <user>` -> list user and group information <br>
+`sudo -l` -> show commands that can be run with sudo <br>
   -> check https://gtfobins.github.io/ if any programs can be used for privesc <br>
 
 watch
