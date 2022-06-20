@@ -68,19 +68,10 @@ _ghidra_
 ## videos
   - ffmpeg and imagemagick
     -> https://gist.github.com/sulram/0c8a95fc90f23e860b9a
-  
-## malware
-  - powerpoints and similar can be unzipped
-  - _vbaProject.bin_ contains macros
-  - ProcessHacker 2 can help with c&c or similar
-  - VirusTotal can detect stuff
-  
- _olevba_
 
-  - Malware detection https://www.virustotal.com/gui/home/upload
 # Misc
   
-# Useful for CTFs
+# External resources
   
 * https://github.com/JohnHammond/ctf-katana
 
