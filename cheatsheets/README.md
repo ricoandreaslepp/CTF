@@ -9,3 +9,5 @@ General markdown for topics:
 # External resources
 * https://www.exploit-db.com/
 * https://github.com/JohnHammond/ctf-katana
+
+ **MOVED TO GITBOOK**
