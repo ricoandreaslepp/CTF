@@ -12,10 +12,6 @@ https://www.exploit-db.com/
 _gdb_
 _ghidra_
   
-## videos
-  - ffmpeg and imagemagick
-    -> https://gist.github.com/sulram/0c8a95fc90f23e860b9a
-
 # Misc
   
 # External resources
