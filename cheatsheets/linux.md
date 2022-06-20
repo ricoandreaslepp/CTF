@@ -1,11 +1,11 @@
 # Linux
 `id <user>` -> list user and group information <br>
 `sudo -l` -> show commands that can be run with sudo <br>
-`watch`
-`sed`
-`seq`
-`uniq`
-`netstat`
+`watch` <br>
+`sed` <br>
+`seq` <br>
+`uniq` <br>
+`netstat` <br>
 
 ## Privesc
 * https://gtfobins.github.io/ if any programs can be used for privesc <br>
