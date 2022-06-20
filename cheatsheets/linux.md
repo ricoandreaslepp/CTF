@@ -1,13 +1,14 @@
 # Linux
 `id <user>` -> list user and group information <br>
 `sudo -l` -> show commands that can be run with sudo <br>
-  -> check https://gtfobins.github.io/ if any programs can be used for privesc <br>
+`watch`
+`sed`
+`seq`
+`uniq`
+`netstat`
 
-watch
-sed
-seq
-uniq
-netstat
+## Privesc
+* https://gtfobins.github.io/ if any programs can be used for privesc <br>
 
 ## Shell stabilisation
   1) If Python is installed <code>python -c 'import pty;pty.spawn("/bin/bash")'</code>, spawns a better featured bash shell
