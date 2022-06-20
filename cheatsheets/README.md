@@ -1,4 +1,5 @@
-# readme
+# readme 
+**MOVED TO GITBOOK**
 A cheatsheet for CTFs, that will eventually hopefully have everything that I know of.
 
 General markdown for topics:
@@ -10,4 +11,3 @@ General markdown for topics:
 * https://www.exploit-db.com/
 * https://github.com/JohnHammond/ctf-katana
 
- **MOVED TO GITBOOK**
