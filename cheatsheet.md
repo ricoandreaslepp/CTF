@@ -80,6 +80,7 @@ _ghidra_
   **exiftool**<br>
     * look at image size
     * either use hex editor (remember little endian) or <code>convert in.jpg -resize INTxINT out.jpg</code>
+    * can alter some things, comments for example
   
  **imagemagick and ffmpeg**
   <br><code> ffmpeg -i video.mp4 -vf mpdecimate,setpts=N/FRAME_RATE/TB frames/frame_%3d.jpg # get frames from video </code><br>
