@@ -8,11 +8,6 @@ General markdown for topics:
 
 https://www.exploit-db.com/
 
-# pwn
-Python pwntools library
-  
-* use remote(HOST, PORT, level='debug')
-  
 # rev
 _gdb_
 _ghidra_
