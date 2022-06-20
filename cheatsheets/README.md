@@ -7,12 +7,6 @@ General markdown for topics:
   3. Tools and how to use them
 
 https://www.exploit-db.com/
-  
-# Crypto
-
-bytes.fromhex(), base64.b64encode(), base64.b64decode(), Crypto.Util.number.long_to_bytes()
-  
-  <code>byte_xor.py</code> in scripts
 
 # pwn
 Python pwntools library
