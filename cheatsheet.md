@@ -35,7 +35,7 @@ _wget_ and run _LinPeas.sh_
 - XXS
 - XXE
   
-# Crypto
+# **Crypto**
 
 bytes.fromhex(), base64.b64encode(), base64.b64decode(), Crypto.Util.number.long_to_bytes()
   
@@ -50,7 +50,7 @@ Python pwntools library
 _gdb_
 _ghidra_
   
-## Android APKs
+## **Android APKs**
   1) APK decompiler https://www.decompiler.com/ or use installed _jadx_ app
   2) Look into _/Resources/AndroidManifest.xml_ and then search _/sources_ for _MainActivity.java_ and work on from there. _R.java_ could also be of use.
   3) Android Studio can be useful for viewing files and actually running the APK  
@@ -58,9 +58,9 @@ _ghidra_
   Reversing guide and exercises: https://www.ragingrock.com/AndroidAppRE/
   https://en.wikipedia.org/wiki/Apk_(file_format)
 
-# Misc
+# **Misc**
 
-## wireshark
+## **wireshark**
 - https://github.com/welchbj/ctf/blob/master/docs/pcap.md
 - file extraction: https://www.sneakymonkey.net/2017/03/03/pcap-file-extraction/
 - WireShark webpage for common vulns
@@ -68,7 +68,7 @@ _ghidra_
 - MITM attacks
 - ARP poisoning
   
-## images
+## **images**
 
   - Varius 2D codes -> QR Code, MaxiCode, Aztec etc
   - https://www.photopea.com/
@@ -91,7 +91,7 @@ _ghidra_
   Tools:
   _strings_, _zsteg_, _xxd_, _binwalk_, _steghide_, _stegsolve_, _foremost_, _stat_, 
   
-## audio
+## **audio**
   - audacity
     * audio spectrogram -> "a spectrogram is a visual representation of the spectrum of frequencies of sound, or other signals, as they vary with time." Basically, it is a method to visualize sound and signals. Can pretty much hide anything from messages to images and so on.
   
