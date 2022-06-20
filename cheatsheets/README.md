@@ -8,21 +8,6 @@ General markdown for topics:
 
 https://www.exploit-db.com/
   
-# Web
-  run _dirbuster_
-  run _nikto_
-  
-  see webgoat for common vulns
-
-- Login
-  default username:passwords combos
-  _hydra_ for login brute-forcing
-
-- Upload vulns
-- Predictable cookies or sessions
-- XXS
-- XXE
-  
 # Crypto
 
 bytes.fromhex(), base64.b64encode(), base64.b64decode(), Crypto.Util.number.long_to_bytes()
