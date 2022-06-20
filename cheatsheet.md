@@ -42,7 +42,9 @@ bytes.fromhex(), base64.b64encode(), base64.b64decode(), Crypto.Util.number.long
   <code>byte_xor.py</code> in scripts
 
 # pwn
-Python pwn library
+Python pwntools library
+  
+* use remote(HOST, PORT, level='debug')
   
 # rev
 _gdb_
