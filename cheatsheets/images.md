@@ -19,5 +19,5 @@
  ** Bitwise operations (code in scripts)
   
   Tools:
-  _strings_, _zsteg_, _xxd_, _binwalk_, _steghide_, _stegsolve_, _foremost_, _stat_, 
+  _strings_, _zsteg_, _xxd_, _binwalk_, _steghide_, _stegsolve_, , _stegcracker_, _foremost_, _stat_, 
   
