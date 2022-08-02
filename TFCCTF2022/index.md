@@ -6,6 +6,8 @@ Extract all the png files, recognize that they are aztec codes, search for an az
 
 I ended up using python to extract the zip files and decode the aztecs while also using bash for exiftool and sorting the files based on the time of creation. Sloppy code, but definitely good enough for a ctf.
 
+``` pyramid.zip, script.sh and script.py``` in the same folder, run with ```python3 script.py pyramid.zip```
+
 ```python
 import subprocess
 import zxing
