@@ -1,5 +1,7 @@
 # TFCCTF 2022
 
+Most challenges were running on a docker so it's hard to make writeups for them, but here's one for the sake of it.
+
 # Secrets Of Tenochtitlan
 
 Extract all the png files, recognize that they are aztec codes, search for an aztec decoding API with no luck, use python's zxing library instead, sort the files based on exiftool's 'Time/Date Original'.
