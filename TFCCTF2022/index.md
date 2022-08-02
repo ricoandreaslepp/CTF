@@ -1,6 +1,6 @@
 # TFCCTF 2022
 
-Most challenges were running on a docker so it's hard to make writeups for them, but here's one for the sake of it.
+Most challenges were running on a docker so it's hard to make writeups for them after the ctf has ended, but here's one without a docker for the sake of it.
 
 # Secrets Of Tenochtitlan
 
